@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-def funcao_saudacao(request):
-    msg = 'Olá Dev, seja bem-vindo'
-    return HttpResponse(msg)
+def gestao_home(request):
+    return render(request, 'index.html')
+

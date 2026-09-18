@@ -1,0 +1,60 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Gestão - Dashboard</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">GestãoAPP</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Cartões Informativos (Dashboard) -->
+        <section class="dashboard-grid">
+            
+            <div class="card-metrica card-projetos">
+                <div class="metrica-header">
+                    <span class="metrica-titulo">Total de Projetos</span>
+                </div>
+                <span class="metrica-valor">1</span>
+                <p class="metrica-descricao">Projetos registrados no sistema</p>
+            </div>
+
+            <div class="card-metrica card-tarefas">
+                <div class="metrica-header">
+                    <span class="metrica-titulo">Total de Tarefas</span>
+                </div>
+                <span class="metrica-valor">1</span>
+                <p class="metrica-descricao">Atividades cadastradas</p>
+            </div>
+
+            <div class="card-metrica card-pendentes">
+                <div class="metrica-header">
+                    <span class="metrica-titulo">Tarefas Ativas</span>
+                </div>
+                <span class="metrica-valor">1</span>
+                <p class="metrica-descricao">Pendentes de conclusão</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
